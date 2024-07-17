@@ -17,7 +17,7 @@ body {
   padding: 20px;
 }
 
-.container {
+.container1 {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -26,11 +26,25 @@ body {
   max-width: 100%;
   width: 800px;
 }
-
-h3 {
+.header{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 1rem;
+  align-items: center;
+}
+.header img{
+  width: 30px;
+  height: 30px;
+}
+#spinner{
+  display: none;
+}
+.title {
   margin: 0;
   opacity: 0.5;
   letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 
 .joke {

@@ -1,6 +1,6 @@
 const joke = document.getElementById('joke');
 const btn = document.getElementById('btn');
-
+const spinner = document.getElementById('spinner');
 
 
 
@@ -12,8 +12,10 @@ async function getJokes(){
              accept:'application/json'
          }
      }
+     spinner.style.display = 'block';
     const res = await fetch('https://icanhazdadjoke.com/',config)
     const data = await res.json();
+    spinner.style.display = 'none';
     joke.innerText = data.joke;
 }
 // function getJokes(){
